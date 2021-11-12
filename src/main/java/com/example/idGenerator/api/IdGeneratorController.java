@@ -6,9 +6,9 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
-
-@RequestMapping("api/v1/person")
 @RestController
+@RequestMapping("/api")
+
 public class IdGeneratorController {
  private final PersonService personService;
     @Autowired
