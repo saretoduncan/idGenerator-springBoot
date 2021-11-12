@@ -7,7 +7,7 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.UUID;
 
-@Repository("fake")
+@Repository("fakeDao")
 public class FakeDataAccessService implements GenerateIdDao{
     public List<Person> DB = new ArrayList<>();
 
