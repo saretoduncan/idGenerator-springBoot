@@ -21,17 +21,18 @@ public class SwaggerConfig {
     public Docket productApi() {
         return new Docket(DocumentationType.SWAGGER_2)
                 .select()
-                .paths(PathSelectors.any())
+                .paths(PathSelectors.ant("/api"))
                 .apis(RequestHandlerSelectors.basePackage("com.example"))
-                .build();
+                .build()
+        .apiInfo(metaInfo());
     }
-    private ApiInfo apiInfo() {
+    private ApiInfo metaInfo() {
         return new ApiInfo(
-                "My REST API", //title
-                "Some custom description of API.", //description
+                "IdGenerator REST API", //title
+                "generates unique id", //description
                 "Version 1.0", //version
                 "Terms of service", //terms of service URL
-                new Contact("Bhanuka Dissanayake", "www.example.com", "myeaddress@company.com"),
+                new Contact("Duncan Moiyo", "", "duncan.moiyo@gmail.com"),
                 "License of API", "API license URL", Collections.emptyList()); // contact info
     }
 }
