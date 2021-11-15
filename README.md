@@ -1,5 +1,7 @@
 # idGenerator-springBoot
 This a SpringBoot restApi that takes a userName as an input and returns unique id
+<div>
+<img src="./src/main/resources/images/apiOutPut.png"/></div>
 
 ## Built With
 
